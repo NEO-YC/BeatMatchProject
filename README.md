@@ -193,12 +193,11 @@ Top placement in search results.
 Higher trust factor for organizers.
 
 👥 Authors
-<table align="center"> <tr> <td align="center"> <a href="https://github.com/NEO-YC"> <img src="https://github.com/NEO-YC.png" width="100px;" alt="Neorai"/><br /> <sub><b>Neorai</b></sub> </a><br /> Full Stack Developer </td> <td align="center"> <a href="https://github.com/danielnisenholz"> <img src="https://www.google.com/search?q=https://ui-avatars.com/api/%3Fname%3DDaniel%26background%3Drandom" width="100px;" alt="Daniel"/><br /> <sub><b>Daniel</b></sub> </a><br /> Full Stack Developer </td> </tr> </table>
+<table align="center"> <tr> <td align="center"> <a href="https://github.com/NEO-YC"> <img src="https://github.com/NEO-YC.png" width="100px;" alt="Neorai"/><br /> <sub><b>Neoray</b></sub> </a><br /> Full Stack Developer </td> <td align="center"> <a href="https://github.com/danielnisenholz"> <img src="https://www.google.com/search?q=https://ui-avatars.com/api/%3Fname%3DDaniel%26background%3Drandom" width="100px;" alt="Daniel"/><br /> <sub><b>Daniel</b></sub> </a><br /> Full Stack Developer </td> </tr> </table>
 
 <div align="center">
 
-BeatMatch © 2025 | Made with ❤️ for the Music Community.
+BeatMatch © 2025 | Made with ❤️|🧠.
 
-⬆ Back to Top
 
 </div>
