@@ -94,7 +94,6 @@ A dedicated marketplace featuring smart filtering, rich media profiles, and a se
 
 ---
 
-אני מבין. נשלח לך את החלק המבוקש מהארכיטקטורה ועד הסוף, כשהפעם נמנע מכל סמליל או עיצוב שעלול ליצור בעיות תצוגה ב-GitHub. כל הטקסט יהיה באנגלית.
 
 🏗️ Architecture
 The project follows a classic decoupled MERN architecture hosted on Render.
