@@ -1,151 +1,157 @@
-BeatMatch Project
+🎵 BeatMatch
 
-A full-stack platform connecting musicians, producers, and event organizers.
-Includes links to the live website, the frontend repository, and the backend repository.
+פלטפורמה חכמה שמחברת בין מוזיקאים למארגני אירועים בישראל
 
-✨ Status: Currently in development (≈70%)
+<div align="center">
 
-🌐 Live Website
 
-https://beatmatchfrontweb.onrender.com/
 
-📦 Repositories
-Frontend
 
-React + Vite
-🔗 https://github.com/NEO-YC/BeatMatchFrontWeb
 
-Backend
 
-Node.js + Express + MongoDB
-🔗 https://github.com/NEO-YC/BeatMatchBackWeb
+</div>
+🎯 תקציר מהיר
 
-🎵 BeatMatch – Platform for Musicians
+BeatMatch היא פלטפורמה שמפשטת את תהליך מציאת המוזיקאים לאירועים בישראל.
+מצד אחד מוזיקאים יוצרים פרופיל מקצועי, מעלים מדיה ומשפרים חשיפה דרך PRO.
+מצד שני מארגני אירועים מקבלים חיפוש ממוקד, סינונים מתקדמים ויצירת קשר מיידית.
 
-A modern platform where musicians can build profiles, get discovered, manage availability, and participate in events.
-Built full-stack with scalable architecture and integration with PayPal and Cloudinary.
+✨ תכונות מובילות
+למוזיקאים
 
-🚀 Features
+יצירת פרופיל מקצועי מלא
 
-🎸 Musician profile creation
+גלריית תמונות וסרטונים
 
-🔍 Smart search filters
+סטטוס PRO עם תג זהב וחשיפה מוגברת
 
-⭐ PRO membership for premium visibility
+ניהול יומן זמינות
 
-💳 PayPal payment integration
+למארגני אירועים
 
-🖼️ Media upload via Cloudinary
+חיפוש חכם לפי כלי נגינה, סגנון, אזור ותקציב
 
-📅 Availability calendar
+צפייה בפרופילים עם מדיה
 
-🎵 Event creation & management
+יצירת קשר ישירה
 
-🛠️ Tech Stack
+פרסום אירועים
+
+למנהלים
+
+לוח בקרה
+
+ניהול משתמשים והרשאות
+
+מעקב אחר משתמשים וסטטוסים
+
+🏗️ ארכיטקטורה כללית
+BeatMatch System
+├── Frontend (React + Vite)
+│   ├── UI
+│   ├── Forms
+│   ├── PayPal Client
+│   └── Auth Handling
+│
+├── Backend (Node.js + Express)
+│   ├── User Management
+│   ├── Events API
+│   ├── Payments API
+│   ├── JWT Auth
+│   └── Cloudinary Uploads
+│
+└── External Services
+    ├── Cloudinary (Media)
+    ├── PayPal (Payments)
+    └── MongoDB Atlas (Database)
+
+🔗 קישורים חשובים
+רכיב	תיאור	קישור
+🌐 אתר פעיל	גרסת הפרודקשן	https://beatmatchfrontweb.onrender.com/
+
+💻 ריפו Frontend	React + Vite	https://github.com/NEO-YC/BeatMatchFrontWeb
+
+🔌 ריפו Backend	Express + MongoDB	https://github.com/NEO-YC/BeatMatchBackWeb
+🛠️ טכנולוגיות עיקריות
 Frontend
 
 React 18
 
-React Router
-
 Vite
 
-CSS3
+React Router
+
+JWT Decode
+
+Cloudinary Upload Widget
 
 Backend
 
-Node.js
+Node.js + Express
 
-Express.js
+MongoDB + Mongoose
 
-MongoDB (Mongoose)
+JWT + bcrypt
 
-JWT Authentication
-
-PayPal REST API
+PayPal API
 
 Cloudinary API
 
-📂 Project Structure
-BeatMatchProject/
-├── Server/
-│   ├── Controllers/
-│   ├── Models/
-│   ├── Routers/
-│   ├── Middleware/
-│   ├── .env.example
-│   └── index.js
-│
-└── Client/
-    ├── public/
-    └── src/
-        ├── components/
-        ├── pages/
-        └── services/
+DevOps
 
-⚙️ Setup Instructions
-Backend Setup
-cd Server
+Render (Frontend + Backend)
+
+GitHub
+
+MongoDB Atlas
+
+🚀 התקנה מהירה
+1. Clone
+git clone https://github.com/NEO-YC/BeatMatchFrontWeb
+git clone https://github.com/NEO-YC/BeatMatchBackWeb
+
+2. התקנת תלויות
 npm install
-cp .env.example .env
+
+3. יצירת קבצי .env
+
+(הכנס פרטי Mongo, Cloudinary, PayPal וכו')
+
+4. הרצה
+# Backend
 npm start
 
-
-Runs at http://localhost:3000
-
-Frontend Setup
-cd Client
-npm install
+# Frontend
 npm run dev
 
+📸 מסכים (Screenshots)
 
-Runs at http://localhost:5173
+כאן תוכל להוסיף תמונות בעתיד. זה נותן מקצועיות וחובה לשוק התעסוקה.
 
-🔐 Security Notes
+🔐 אבטחה מרכזית
 
-.env is never committed
+סיסמאות מוצפנות עם bcrypt
 
-JWT for authentication
+JWT עם תוקף מוגדר
 
-Tokens stored securely on client
+אימות צד שרת לכל פעולה רגישת הרשאות
 
-PayPal sandbox for testing
+בדיקת סוג וגודל קבצים לפני העלאה
 
-CORS configured safely
+🤝 תרומות
 
-📡 API Examples
-Public
-POST /user/register
-POST /user/login
-GET  /user/musicians/search
-GET  /user/musicians/:id
+כל תרומה לפרויקט מוזמנת.
+פתיחה של Pull Request מומלצת לבצע מול הריפוז של הפרונט או הבאק.
 
-Protected (requires JWT)
-PUT    /user/musician/profile
-GET    /user/me/musician-profile
-POST   /user/payments/create
-POST   /user/payments/capture
-DELETE /user/account
+👥 יוצרים
 
-⭐ Membership System
-Free
+נהוראי
+Full Stack Developer
+GitHub: https://github.com/NEO-YC
 
-Create musician profile
+דניאל
+Full Stack Developer
 
-Basic browsing
+⭐ הערכת פרויקט
 
-Limited search visibility
-
-PRO
-
-PRO badge
-
-Higher ranking
-
-Priority search placement
-
-Expanded dashboard
-
-📄 License
-
-Educational purposes only.
+אם אהבת את הרעיון או רוצים לעזור, אשמח ל-Star בריפוז!
