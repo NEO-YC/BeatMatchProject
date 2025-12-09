@@ -104,8 +104,12 @@ graph LR
     API --> Mongo[("MongoDB Atlas")]
     API --> Cloudinary["Cloudinary Media"]
     API --> PayPal["PayPal Sandbox"]
+    
 Directory Structure (Visual)
 BeatMatch Ecosystem
+
+
+
 
 💻 Frontend (React + Vite)
 
@@ -124,6 +128,9 @@ Auth Middleware (JWT)
 DB Models (Schemas)
 
 External Services (PayPal/Cloudinary)
+
+
+
 
 🚀 Quick Start
 Since the repositories are separated, here is how to get the ecosystem running locally.
