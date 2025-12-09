@@ -98,13 +98,13 @@ A dedicated marketplace featuring smart filtering, rich media profiles, and a se
 
 The project follows a decoupled **MERN** architecture hosted on Render.
 
-```mermaid
+``mermaid
 graph LR
-    User[User / Client] --> React[Frontend (React + Vite)]
-    React --> API[Backend API (Express + Node)]
-    API --> Mongo[(MongoDB Atlas)]
-    API --> Cloudinary[Cloudinary Media]
-    API --> PayPal[PayPal Sandbox]
+    User["User / Client"] --> React["Frontend (React + Vite)"]
+    React --> API["Backend API (Express + Node)"]
+    API --> Mongo[("MongoDB Atlas")]
+    API --> Cloudinary["Cloudinary Media"]
+    API --> PayPal["PayPal Sandbox"]
 Directory Structure
 Bash
 
@@ -119,6 +119,7 @@ BeatMatch Ecosystem
     ├── Auth Middleware (JWT)
     ├── DB Models (Schemas)
     └── External Services (PayPal/Cloudinary)
+
 🚀 Quick Start
 Since the repositories are separated, here is how to get the ecosystem running locally.
 
@@ -178,14 +179,16 @@ We implemented a real-world business model using PayPal:
 
 Free Tier: Basic profile creation.
 
-PRO Tier (49₪): * Gold Badge next to the name.
+PRO Tier (49₪):
+
+Gold Badge next to the name.
 
 Top placement in search results.
 
 Higher trust factor for organizers.
 
 👥 Authors
-<table align="center"> <tr> <td align="center"> <a href="https://github.com/NEO-YC"> <img src="https://github.com/NEO-YC.png" width="100px;" alt="Neorai"/><br /> <sub><b>Neorai</b></sub> </a><br /> Full Stack Developer </td> <td align="center"> <img src="https://www.google.com/search?q=https://ui-avatars.com/api/%3Fname%3DDaniel%26background%3Drandom" width="100px;" alt="Daniel"/><br /> <sub><b>Daniel</b></sub><br /> Full Stack Developer </td> </tr> </table>
+<table align="center"> <tr> <td align="center"> <a href="https://github.com/NEO-YC"> <img src="https://github.com/NEO-YC.png" width="100px;" alt="Neorai"/><br /> <sub><b>Neorai</b></sub> </a><br /> Full Stack Developer </td> <td align="center"> <a href="#"> <img src="https://www.google.com/search?q=https://ui-avatars.com/api/%3Fname%3DDaniel%26background%3Drandom" width="100px;" alt="Daniel"/><br /> <sub><b>Daniel</b></sub> </a><br /> Full Stack Developer </td> </tr> </table>
 
 <div align="center">
 
