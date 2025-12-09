@@ -94,43 +94,19 @@ A dedicated marketplace featuring smart filtering, rich media profiles, and a se
 
 ---
 
-## 🏗️ Architecture
+אני מבין. נשלח לך את החלק המבוקש מהארכיטקטורה ועד הסוף, כשהפעם נמנע מכל סמליל או עיצוב שעלול ליצור בעיות תצוגה ב-GitHub. כל הטקסט יהיה באנגלית.
 
-The project follows a decoupled **MERN** architecture hosted on Render.
+🏗️ Architecture
+The project follows a classic decoupled MERN architecture hosted on Render.
 
-graph LR
-    User["User / Client"] --> React["Frontend (React + Vite)"]
-    React --> API["Backend API (Express + Node)"]
-    API --> Mongo[("MongoDB Atlas")]
-    API --> Cloudinary["Cloudinary Media"]
-    API --> PayPal["PayPal Sandbox"]
-    
-Directory Structure (Visual)
+📂 Ecosystem Overview
 BeatMatch Ecosystem
 
+💻 Frontend (React + Vite): Handles User Interface, Search, and Payment UI.
 
+🔌 Backend (Node.js + Express): Manages RESTful API, Authentication, and Database Models.
 
-
-💻 Frontend (React + Vite)
-
-User Interface (Components)
-
-Search Logic & Filters
-
-Payment Gateway UI
-
-🔌 Backend (Node.js + Express)
-
-RESTful API Routes
-
-Auth Middleware (JWT)
-
-DB Models (Schemas)
-
-External Services (PayPal/Cloudinary)
-
-
-
+☁️ External Services: MongoDB Atlas, Cloudinary CDN, PayPal Payment Gateway.
 
 🚀 Quick Start
 Since the repositories are separated, here is how to get the ecosystem running locally.
@@ -138,54 +114,59 @@ Since the repositories are separated, here is how to get the ecosystem running l
 Prerequisites
 Node.js >= 16.x
 
-MongoDB Atlas Account
+npm or yarn
 
-PayPal Developer Account (Sandbox)
+Account for MongoDB Atlas
 
-Cloudinary Account
+Account for PayPal Developer (Sandbox)
 
-1. Clone the Repositories
+Account for Cloudinary
+
+1. Clone and Install the Repositories
 Bash
 
 # Clone Frontend
-git clone [https://github.com/NEO-YC/BeatMatchFrontWeb.git](https://github.com/NEO-YC/BeatMatchFrontWeb.git)
+git clone https://github.com/NEO-YC/BeatMatchFrontWeb.git
+cd BeatMatchFrontWeb
+npm install
 
-# Clone Backend
-git clone [https://github.com/NEO-YC/BeatMatchBackWeb.git](https://github.com/NEO-YC/BeatMatchBackWeb.git)
+# Clone Backend (in a separate terminal)
+git clone https://github.com/NEO-YC/BeatMatchBackWeb.git
+cd BeatMatchBackWeb
+npm install
 2. Environment Setup
-Backend .env:
-
-קטע קוד
+Backend (.env file)
 
 MONGODB_URI=your_mongodb_connection_string
 PORT=3000
-JWT_SECRET=your_secure_secret
-PAYPAL_CLIENT_ID=your_sandbox_id
-PAYPAL_CLIENT_SECRET=your_sandbox_secret
-CLOUDINARY_CLOUD_NAME=your_cloud_name
-CLOUDINARY_API_KEY=your_key
-CLOUDINARY_API_SECRET=your_secret
-Frontend .env:
+JWT_SECRET=your_super_secret_key_min_32_chars
+JWT_EXPIRE=7d
 
-קטע קוד
+PAYPAL_MODE=sandbox
+PAYPAL_CLIENT_ID=your_sandbox_client_id
+PAYPAL_CLIENT_SECRET=your_sandbox_secret
+
+CLOUDINARY_CLOUD_NAME=your_cloud_name
+CLOUDINARY_API_KEY=your_api_key
+CLOUDINARY_API_SECRET=your_api_secret
+
+FRONTEND_URL=http://localhost:5173
+Frontend (.env file)
 
 VITE_API_URL=http://localhost:3000
 VITE_PROFILE_ACTIVATION_AMOUNT=49
 3. Run Locally
-Terminal 1 (Backend):
-
 Bash
 
+# Terminal 1 - Backend
 cd BeatMatchBackWeb
-npm install
 npm start
-Terminal 2 (Frontend):
+# Server: http://localhost:3000
 
-Bash
-
+# Terminal 2 - Frontend
 cd BeatMatchFrontWeb
-npm install
 npm run dev
+# App: http://localhost:5173
 💳 Monetization (PRO)
 We implemented a real-world business model using PayPal:
 
@@ -200,11 +181,10 @@ Top placement in search results.
 Higher trust factor for organizers.
 
 👥 Authors
-<table align="center"> <tr> <td align="center"> <a href="https://github.com/NEO-YC"> <img src="https://github.com/NEO-YC.png" width="100px;" alt="Neorai"/><br /> <sub><b>Neoray</b></sub> </a><br /> Full Stack Developer </td> <td align="center"> <a href="https://github.com/danielnisenholz"> <img src="https://www.google.com/search?q=https://ui-avatars.com/api/%3Fname%3DDaniel%26background%3Drandom" width="100px;" alt="Daniel"/><br /> <sub><b>Daniel</b></sub> </a><br /> Full Stack Developer </td> </tr> </table>
+<table align="center"> <tr> <td align="center"> <a href="https://github.com/NEO-YC"> <img src="https://github.com/NEO-YC.png" width="100px;" alt="Neorai"/><br /> <sub><b>Neorai</b></sub> </a><br /> Full Stack Developer </td> <td align="center"> <a href="https://github.com/danielnisenholz"> <img src="https://github.com/danielnisenholz.png" width="100px;" alt="Daniel"/><br /> <sub><b>Daniel</b></sub> </a><br /> Full Stack Developer </td> </tr> </table>
 
 <div align="center">
 
 BeatMatch © 2025 | Made with ❤️|🧠.
-
 
 </div>
